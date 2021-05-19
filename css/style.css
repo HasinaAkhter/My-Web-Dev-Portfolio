@@ -13,7 +13,7 @@
 
 body {
 	background: rgb(220, 220, 220);
-	font-family: 'Varela-Round', sans-serif;
+	font-family: "Lato", sans-serif;
 	font-size: 14px;
 }
 
@@ -43,13 +43,17 @@ HEADING/NAVIGATION/FOOTER
 	list-style: none;
 	text-transform: uppercase;
 	font-weight: 800;
-	background: #fff;
+	background: #fff;	
+}
+
+.main-nav li:hover {
+	background: #dcfcbd;
 }
 
 .main-header {
 	height: 600px;
 	width: 100%;
-	background: #ccc url('../images/banner.jpg')no-repeat center;
+	background: linear-gradient(#141413, transparent 90%), linear-gradient(0deg, #fce0c4, transparent), #fff url('../images/banner.jpg')no-repeat center;
 	background-size: cover;
 	padding-top: .5em;
 	padding-bottom: .5em;
@@ -76,7 +80,8 @@ HEADING/NAVIGATION/FOOTER
 	border-radius: .8em;
 }
 
-.button1 {
+.button1,
+.contact {
 	background-color: rgb(220, 220, 220);
 	color: #000;
 	border: 2px solid #555555;
@@ -87,36 +92,26 @@ HEADING/NAVIGATION/FOOTER
 	transition-property: border-radius;
 	transition-duration: .5s, .4s;
 }
+.contact{
+	font-size: 18px;
+}
 
-.button1:hover {
+.button1:hover,
+ .contact:hover {
 	background: rgb(185, 84, 253);
 	border-radius: .8em;
 	color: #fff;
 }
 
-.contact {
-	color: #000;
-	border: 3px solid #f3109c;
-	padding: 10px;
-	margin: 10px;
-	font-size: 18px;
-	border-radius: .8em;
-}
-
-.contact:hover {
-	background: rgb(153, 3, 253);
-	color: #fff;
-}
 
 .main {
 	margin-top: 5px;
 	color: #fff;
-	font-family: 'Lobster', cursive;
+	
 }
 
 .detail {
 	text-transform: uppercase;
-	font-family: 'Varela-Round', sans-serif;
 }
 
 .wrap {
@@ -229,7 +224,7 @@ a:link {
 a:focus,
 #about h2:focus,
 #contact h2:focus {
-	outline: 3px solid coral;
+	outline: 1px dotted rgb(248, 244, 242);
 }
 
 /* ================================= 
@@ -257,18 +252,16 @@ larger screens using media queries.*/
 	.main-nav li {
 		border: 3px solid rgb(243, 166, 166);
 		border-radius: 10px 5%;
+		display: inline-block;
+		margin-left: 15px;
+		/*This will display the list items side by side 
+	  and create some separation between each navigation item.*/
 	}
 
 	.main-nav {
 		float: right;
 	}
 
-	.main-nav li {
-		display: inline-block;
-		margin-left: 15px;
-		/*This will display the list items side by side 
-	  and create some separation between each navigation item.*/
-	}
 
 	.tagline {
 		font-size: 20px;
